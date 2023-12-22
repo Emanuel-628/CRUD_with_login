@@ -1,11 +1,11 @@
 
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
-
 @if (Session::has('mensaje'))
-    {{ Session::get('mensaje') }}
+    <div class = "alert alert-success" role = "alert">
+        {{ Session::get('mensaje') }}
+   </div>
 @endif
 
 <a href = "{{ url('empleado/create') }}" class = "btn btn-success"> Registrar nuevo empleado</a>
@@ -53,5 +53,6 @@
         @endforeach
     </tbody>
 </table>
+{!! $empleados->links() !!}
 </div>
 @endsection

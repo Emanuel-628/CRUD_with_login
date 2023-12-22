@@ -31,6 +31,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
+                    <li class = "nav-item"></li>
+                    <a class="nav-link" href="{{ route('empleado.index') }}">{{ __('Empleados') }}</a>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
